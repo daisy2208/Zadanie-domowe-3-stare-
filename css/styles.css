@@ -334,6 +334,10 @@ border-radius: 4px;
   cursor:pointer;
   color:#ffffff;
 }
+/*Pictures*/
+.examples{
+  background-color: #EEEEEE;
+}
 .picture{
   background: #FFFFFF;
 border: 1px solid #EEEEEE;
