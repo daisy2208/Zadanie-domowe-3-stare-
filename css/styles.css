@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #757575;
@@ -37,6 +42,12 @@ body {
 }
 
 /*Web Studio */
+.header-container{
+  inline:flex;
+  flex-direction: row;
+  align-items: center;
+  height:80px;
+}
 .blue-logo {
   font-family: "Raleway";
   font-style: normal;
@@ -46,6 +57,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--acent-color);
   text-decoration: none;
+  margin-left: 215px;
+  margin-top:  24px;
+  margin-bottom: 25px;
 }
 .up-logo {
   font-family: "Raleway";
@@ -58,89 +72,76 @@ body {
   text-decoration: none;
 }
 
-/*Agencja*/
-
-.click-links {
+.active {
+  color: var(--acent-color);
+}
+nav.list{
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+  list-style-type: none;
+}
+.nav-list-items {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--acent-color);
+  text-decoration: none;
+  margin-right:46px;
+  cursor:pointer;
+  color: var(--main-text-color);
+  margin-top:32px;
+  margin-bottom:32px;
+  margin-right:453px;
 }
-.click-links:hover {
-  cursor: pointer;
+.nav-list-items:hover {
   color: var(--acent-color);
 }
 .active {
   color: var(--acent-color);
 }
-/*Portfolio*/
-.portfolio {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-}
-.portfolio:hover {
-  cursor:pointer;
-  color: var(--acent-color);
-}
-
-/*Kontakt*/
-.click-contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  }
-.click-contact:hover{
-  cursor:pointer;
-  color:var(--acent-color);
-}
-/*e-mail*/
-.contact {
+/*Contact*/
+  .contact-list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+    list-style-type: none;}
+.contact-items {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  margin-left: 1078px;
+  margin-right: 387px;
+  cursor:pointer;
 }
-.contact:hover {
-  color: #2196f3;
-  cursor: pointer;
+.contact-items:hover {
+  color: var(--acent-color);
+  text-decoration: none;
 }
-.contact:focus {
-  color: #2196f3;
-  cursor: pointer;
+.contact-items:focus {
+  color: var(--acent-color);
+  text-decoration: none;
 }
 
-/*phone number*/
-.click-phone {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-.click-phone:hover{
-  text-decoration: underline;
-}
-.click-phone:focus{
-  text-decoration: underline;
-}
 .list{
 display:flex;
 margin-right: 1px;
-align-items: center;}
-/*header*/
-section{
-  background-color: #2F303A;
-  color: var(--contener-color)
+align-items: center;
+gap:30px;
+justify-content:center;
 }
-.type {
+
+/*header*/
+.hero{
+  background-color: #2F303A;
+  color: var(--contener-color);
+  width:1600px;
+  height:600px;
+}
+.hero-title {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 900;
@@ -150,11 +151,15 @@ section{
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
+  margin-top:200px;
+  margin-bottom:280px;
+  justify-content: center;
+  padding: 200px 452px 280px;
 }
-/* button-order*/
-.order {
+/* button-hero*/
+.hero-button {
   background-color: var(--acent-color);
-  color: var(--background-color);
+  color: #2F303A;
   text-align: center;
   font-weight: 700;
   font-size: 16px;
@@ -164,12 +169,21 @@ section{
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 }
-.order:hover {
-  text-decoration: underline;
-  cursor:pointer;
+.hero-button:hover {
+  background-color: #175ea9;
 }
 /* h2-text*/
-.content {
+.list{
+  align-items: center;
+  display:flex;
+  flex-direction:row;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px
+}
+.content-title {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -178,9 +192,17 @@ border-radius: 4px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  display:contents;
+}
+.content-items{
+  font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
 }
 /*section 1-our mission*/
-.title-1 {
+.work-title {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -189,6 +211,8 @@ border-radius: 4px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-top:94px;
+  margin-bottom:50px;
 }
 /*Photoes*/
 .center {
@@ -197,6 +221,15 @@ border-radius: 4px;
   display: inline-block;
 }
 /*team*/
+.team-title{
+  font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+
+}
 .name{
   font-weight: 500;
 font-size: 16px;
@@ -213,6 +246,7 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #757575;
 }
+/*
 .title-2 {
   font-family: var(--main-font);
   font-style: normal;
@@ -222,7 +256,8 @@ color: #757575;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-}
+}*/
+/*
 .information{
   font-family: var(--main-font);
 font-style: normal;
@@ -231,7 +266,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--secondary-text-color);
-}
+}*/
 /*pitures*/
 .photo {
   background: url(4853);
@@ -273,49 +308,16 @@ color: #ffffff;
 }
 /*PORTFOLIO*/
 
-.click-links {
-  color: var(--main-text-color);
-  text-decoration: none;
-  font-weight: 500;
-  cursor:pointer;
-}
-/* contacts elements*/
-.click-contact {
-  text-decoration: none;
-  color: #212121;
-  cursor:pointer;
-}
-.portfolio{
-  font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-cursor:pointer;
-color: var(--main-text-color);
-text-decoration: none;
-}
-.portfolio:hover{
-  color: var(--acent-color);
-}
-.contact-panels{
-  text-decoration: none;
-  font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #757575;
-}
-.contact-panels:hover{
-  color: var(--acent-color);
-}
-.click-phone {
-  text-decoration: none;
-  color: #757575;
-}
 /*portfolio-buttons*/
 .buttons-nav{
   background-color: var(--background-color);
+  margin-top:180px;
+  margin-right:532px;
+  margin-left:991px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+
 }
 .button{
   font-family:var(--main-font);
@@ -328,15 +330,19 @@ letter-spacing: 0.03em;
 color: var(--main-text-color);
 background: #F5F4FA;
 border-radius: 4px;
+cursor:pointer;
 }
 .button:hover{
   background: var(--acent-color);
-  cursor:pointer;
   color:#ffffff;
 }
 /*Pictures*/
-.examples{
+.wrapper{
   background-color: #EEEEEE;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-top:262px;
+  justify-content: center;
 }
 .picture{
   background: #FFFFFF;
@@ -364,9 +370,12 @@ color: var(--secondary-text-color);
 ul {
   list-style-type: none;
 }
-.web-navigation {
-  text-decoration: none;
+.list{
+  display:flex;
+  flex-wrap: wrap;
+  gap:30px;
 }
+
 .click-portfolio {
   text-decoration: none;
   color: var(--acent-color);
@@ -428,6 +437,7 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 text-decoration: none;
 cursor:pointer;
+font-style:normal;
 }
 .address-contact:hover{
   color: var(--acent-color)
