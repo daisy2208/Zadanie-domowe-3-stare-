@@ -22,30 +22,38 @@
   <body>
     <header>
       <div class="header-container">
-        <a href="index.html" class="blue-logo"
-          >Web<span class="up-logo">Studio</span></a
-        >
-        <nav class="nav-section">
-          <ul class="nav-list">
+        <span class="flex-box">
+          <a href="index.html" class="blue-logo"
+            >Web<span class="up-logo">Studio</span></a
+          >
+        </span>
+        <span class="flex-box">
+          <nav class="nav-section">
+            <ul class="nav-list">
+              <li>
+                <a href="index.html" class="nav-list-items active">Agencja</a>
+              </li>
+              <li>
+                <a href="portfolio.html" class="nav-list-items">Portfolio</a>
+              </li>
+              <li><a href="#" class="nav-list-items">Kontakt</a></li>
+            </ul>
+          </nav>
+        </span>
+        <span class="flex-box">
+          <ul class="contact-list">
             <li>
-              <a href="index.html" class="nav-list-items active">Agencja</a>
+              <a href="mailto:info@devstudio.com" class="contact-items"
+                >info@devstudio.com</a
+              >
             </li>
             <li>
-              <a href="portfolio.html" class="nav-list-items">Portfolio</a>
+              <a href="tel:+48111111111" class="contact-items"
+                >+48 111 111 111</a
+              >
             </li>
-            <li><a href="#" class="nav-list-items">Kontakt</a></li>
           </ul>
-        </nav>
-        <ul class="contact-list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact-items"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+48111111111" class="contact-items">+48 111 111 111</a>
-          </li>
-        </ul>
+        </span>
       </div>
     </header>
     <main>
@@ -56,34 +64,36 @@
       <section class="container">
         <h2 class="visually-hidden">Tekst</h2>
         <ul class="list">
-          <li>
-            <h3 class="content-title">LOREM IPSUM</h3>
-            <p class="content-items">
-              ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-              sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3 class="content-title">LOREM IPSUM</h3>
-            <p class="content-items">
-              ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-              sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3 class="content-title">LOREM IPSUM</h3>
-            <p class="content-items">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3 class="content-title">LOREM IPSUM</h3>
-            <p class="content-items">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
+          <div class="content">
+            <li>
+              <h3 class="content-title">LOREM IPSUM</h3>
+              <p class="content-items">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h3 class="content-title">LOREM IPSUM</h3>
+              <p class="content-items">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h3 class="content-title">LOREM IPSUM</h3>
+              <p class="content-items">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <h3 class="content-title">LOREM IPSUM</h3>
+              <p class="content-items">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </div>
         </ul>
       </section>
       <section class="work">
@@ -179,24 +189,26 @@
         >
         <address>
           <ul>
-            <li>
-              <a
-                href="https://goo.gl/maps/aS6nvoZYcpZqH1376"
-                target="blank"
-                class="address"
-                >m. Warszawa, Aleje Jerozolimskie 21</a
-              >
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="address-contact"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+48111111111" class="address-contact"
-                >+48 111 111 111</a
-              >
-            </li>
+            <div class="contact-information">
+              <li>
+                <a
+                  href="https://goo.gl/maps/aS6nvoZYcpZqH1376"
+                  target="blank"
+                  class="address"
+                  >m. Warszawa, Aleje Jerozolimskie 21</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="address-contact"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+48111111111" class="address-contact"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </div>
           </ul>
         </address>
       </div>

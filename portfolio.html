@@ -23,36 +23,44 @@
   </head>
   <body>
     <header>
-      <div class="container-header">
-        <a href="index.html" class="blue-logo"
-          >Web<span class="up-logo">Studio</span></a
-        >
-        <nav class="nav-section">
-          <ul class="nav-list">
+      <div class="header-container">
+        <span class="flex-box">
+          <a href="index.html" class="blue-logo"
+            >Web<span class="up-logo">Studio</span></a
+          >
+        </span>
+        <span class="flex-box">
+          <nav class="nav-section">
+            <ul class="nav-list">
+              <li>
+                <a href="index.html" class="nav-list-items">Agencja</a>
+              </li>
+              <li><a href="index.html" class="nav-list-items">Portfolio</a></li>
+              <li><a href="index.html" class="nav-list-items">Kontakty</a></li>
+            </ul>
+          </nav>
+        </span>
+        <span class="flex-box">
+          <ul class="contact-list">
             <li>
-              <a href="index.html" class="nav-list-items">Agencja</a>
+              <a href="mailto:info@devstudio.com" class="contact-items"
+                >info@devstudio.com</a
+              >
             </li>
-            <li><a href="index.html" class="nav-list-items">Portfolio</a></li>
-            <li><a href="index.html" class="nav-list-items">Kontakty</a></li>
+            <li>
+              <a href="tel:+48111111111" class="contact-items"
+                >+48 111 111 111</a
+              >
+            </li>
           </ul>
-        </nav>
-        <ul class="contact-list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact-items"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+48111111111" class="contact-items">+48 111 111 111</a>
-          </li>
-        </ul>
+        </span>
       </div>
     </header>
     <main>
       <h1 class="visually-hidden">Portfolio</h1>
       <section>
         <div class="container">
-          <ul class="list buttons-nav">
+          <ul class="list-buttons-nav">
             <li><button type="button" class="button">Wszystkie</button></li>
             <li><button type="button" class="button">Strony</button></li>
             <li><button type="button" class="button">Aplikacje</button></li>
@@ -175,24 +183,26 @@
         >
         <address>
           <ul class="address">
-            <li>
-              <a
-                href="https://goo.gl/maps/aS6nvoZYcpZqH1376"
-                target="blank"
-                class="address"
-                >m. Warszawa, Aleje Jerozolimskie 21</a
-              >
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="address-contact"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+48111111111" class="address-contact"
-                >+48 111 111 111</a
-              >
-            </li>
+            <div class="contact-information">
+              <li>
+                <a
+                  href="https://goo.gl/maps/aS6nvoZYcpZqH1376"
+                  target="blank"
+                  class="address"
+                  >m. Warszawa, Aleje Jerozolimskie 21</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="address-contact"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+48111111111" class="address-contact"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </div>
           </ul>
         </address>
       </div>
