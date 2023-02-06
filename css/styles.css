@@ -111,6 +111,7 @@ nav.list{
   color: #757575;
   text-decoration: none;
   cursor:pointer;
+  margin-left:50px;
 }
 .contact-items:hover {
   color: var(--acent-color);
@@ -162,6 +163,11 @@ justify-content:center;
   background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+padding-top:10px; 
+padding-right:41px;
+padding-left:41px;
+padding-bottom: 10px;
+justify-content: center;
 }
 .hero-button:hover {
   background-color: #175ea9;
@@ -374,7 +380,6 @@ padding-bottom:6px;
   display:flex;
   flex-wrap: wrap;
   gap:30px;
-  background-color: #E5e5e5;
   justify-content: center;
   margin-bottom: 94px;
   margin-top:56px;
